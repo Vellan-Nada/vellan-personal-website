@@ -1,0 +1,43 @@
+.career-row {
+  margin: 0;
+}
+
+.career-card {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 3rem;
+}
+
+/* ✅ Dyson card: dark background, white text */
+.dyson-card {
+  background-color: #000;
+  color: #fff;
+  border-right: 1px solid #333;
+}
+
+/* ✅ Perfex card: white background, black text */
+.perfex-card {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Optional hover glow effect */
+.career-card:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.dyson-card:hover {
+  background-color: #111;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.perfex-card:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
