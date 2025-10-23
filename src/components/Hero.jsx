@@ -8,7 +8,7 @@ export default function HeroImage() {
         className="text-center bg-image"
         style={{
           backgroundImage: `url(${heroImage})`,
-          minHeight: "100vh", // ✅ full screen height
+          minHeight: "25vh", // ✅ full screen height
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
