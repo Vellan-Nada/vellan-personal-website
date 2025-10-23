@@ -41,7 +41,7 @@ export default function HeroImage() {
 
           <h4
             style={{
-              fontSize: "clamp(1rem, 3vw, 1.8rem)",
+              fontSize: "clamp(1.2rem, 3vw, 1.8rem)",
               marginBottom: "0rem", // ✅ removes bottom gap
             }}
           >
