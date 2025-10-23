@@ -8,7 +8,7 @@ export default function HeroImage() {
         className="text-center bg-image"
         style={{
           backgroundImage: `url(${heroImage})`,
-          minHeight: "50vh", // ✅ full screen height
+          minHeight: "50vh",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -16,15 +16,15 @@ export default function HeroImage() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          padding: "2rem", // ✅ adds breathing room on smaller screens
+          padding: "1rem 0", // ✅ reduced top/bottom padding
         }}
       >
         <div className="text-white">
           <h1
-            className="mb-3"
+            className="mb-2"
             style={{
-              fontSize: "clamp(2rem, 6vw, 5rem)", // ✅ responsive font
-              padding: "1rem",
+              fontSize: "clamp(2rem, 6vw, 5rem)",
+              padding: "3rem", // ✅ smaller padding
             }}
           >
             Hi! I'm Vellan
@@ -32,15 +32,17 @@ export default function HeroImage() {
 
           <h4
             style={{
-              fontSize: "clamp(1rem, 3vw, 1.8rem)", // ✅ scales down on mobile
-              marginBottom: "0.5rem",
+              fontSize: "clamp(1rem, 3vw, 1.8rem)",
+              marginBottom: "0.5rem", // ✅ tighter spacing
             }}
           >
             I am a full-stack developer.
           </h4>
+
           <h4
             style={{
               fontSize: "clamp(1rem, 3vw, 1.8rem)",
+              marginBottom: "0rem", // ✅ removes bottom gap
             }}
           >
             Design engineer, with an interest in programming.
@@ -50,3 +52,4 @@ export default function HeroImage() {
     </header>
   );
 }
+
