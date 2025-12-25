@@ -76,7 +76,7 @@ function Projects() {
             paddingBottom: "0.5rem",
           }}
         >
-          Projects
+          Side Projects
         </h2>
       </div>
 

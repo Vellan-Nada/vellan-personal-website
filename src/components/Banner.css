@@ -1,0 +1,115 @@
+/* wrapper for section title */
+.banner-section {
+  padding: 3rem 0 4rem 0;
+}
+
+.banner-heading-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.banner-heading {
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* banner */
+.banner {
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 40px;
+
+  background: #5b3a29; /* brown */
+  min-height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.5rem 1.25rem;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* keeps banner centered with left/right margin */
+.banner-container {
+  width: 100%;
+  max-width: 1200px; /* adjust if you want */
+  margin: 0 auto;
+  padding: 0 1rem; /* ✅ side space on mobile too */
+}
+
+/* optional: slightly larger side space on bigger screens */
+@media (min-width: 768px) {
+  .banner-container {
+    padding: 0 2rem;
+  }
+}
+
+.banner-title-link {
+  color: #ffffffff; /* black text */
+  text-decoration: none; /* remove underline */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.banner-title-link:hover {
+  opacity: 0.85;
+  transform: translateY(-1px); /* subtle lift */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.banner-logo-wrap {
+  width: 85px;
+  height: 90px;
+  margin: 0 auto 1rem auto;
+
+  border-radius: 18px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+}
+
+.banner-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.banner-title {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #111; /* black title */
+  text-shadow: none;
+}
+
+.banner-subtitle {
+  margin: 0.75rem 0 0 0;
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.95;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    min-height: 280px;
+    border-width: 8px;
+  }
+}
