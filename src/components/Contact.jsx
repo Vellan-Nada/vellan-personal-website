@@ -13,7 +13,13 @@ function Contact() {
           {/* Left: Quote */}
           <Col md={4} className="mb-3 mb-md-0">
             <p className="footer-quote">
-              Thanks for visiting my website!
+              Thanks for visiting my website!{" "}
+              <span className="footer-dance" role="img" aria-label="dancing">
+                🕺
+              </span>
+              <span className="footer-dance" role="img" aria-label="dancing">
+                💃🏼
+              </span>
             </p>
           </Col>
 

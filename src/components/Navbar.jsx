@@ -53,13 +53,13 @@ function BasicExample() {
             </Nav.Link>
 
             <Nav.Link
-              href="#mainprojects"
+              href="#mainsoftware"
               onClick={(e) => {
                 e.preventDefault();
-                handleScroll("mainprojects");
+                handleScroll("mainsoftware");
               }}
             >
-              Main Projects
+              Main Software
             </Nav.Link>
 
             <Nav.Link

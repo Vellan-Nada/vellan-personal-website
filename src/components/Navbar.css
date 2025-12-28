@@ -1,13 +1,13 @@
 .navbar-brand-vn {
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
 /* Underline effect */
@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* slightly below text */
+  bottom: 2px; /* slightly below text */
   width: 0%;
   height: 3px;
   background-color: black; /* blue line */

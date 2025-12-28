@@ -23,7 +23,7 @@ function App() {
         <Skills />
       </section>
 
-      <section id="skills">
+      <section id="mainsoftware">
         <Banner />
       </section>
 

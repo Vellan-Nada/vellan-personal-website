@@ -7,7 +7,7 @@ export default function Banner() {
     <section className="banner-section">
       {/* Section title (same style as Skills/Projects) */}
       <div className="banner-heading-wrap">
-        <h2 className="banner-heading">Main Projects</h2>
+        <h2 className="banner-heading">Main Software</h2>
       </div>
 
       {/* Banner */}
@@ -22,9 +22,16 @@ export default function Banner() {
 
           {/* Center content */}
           <div className="banner-content">
-            <div className="banner-logo-wrap">
-              <img className="banner-logo" src={logo} alt="Logo" />
-            </div>
+            <a
+              href="https://www.zenit-online.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="banner-logo-link"
+            >
+              <div className="banner-logo-wrap">
+                <img className="banner-logo" src={logo} alt="Logo" />
+              </div>
+            </a>
 
             <h1 className="banner-title">
               <a

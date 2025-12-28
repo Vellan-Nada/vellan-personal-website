@@ -1,3 +1,8 @@
+.career-section {
+  padding: 2rem 0;
+  margin-bottom: 4rem;
+}
+
 .career-row {
   margin: 0;
 }
@@ -6,11 +11,65 @@
   height: 100%;
   border: none;
   border-radius: 0;
+  text-align: left;
+  padding: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-card .card-body {
+  padding: 2.5rem;
+}
+
+.career-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 3rem;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.career-title {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.career-badge {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.career-summary {
+  margin: 1rem 0 1.25rem 0;
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+.career-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.career-tags span {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.career-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.career-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
 }
 
 /* ✅ Dyson card: dark background, white text */
@@ -20,24 +79,32 @@
   border-right: 1px solid #333;
 }
 
+.dyson-card .career-badge,
+.dyson-card .career-tags span {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dyson-card .career-list li::marker {
+  color: #8fb3ff;
+}
+
 /* ✅ Perfex card: white background, black text */
 .perfex-card {
   background-color: #fff;
   color: #000;
 }
 
+.perfex-card .career-badge,
+.perfex-card .career-tags span {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.perfex-card .career-list li::marker {
+  color: #3b6fff;
+}
+
 /* Optional hover glow effect */
 .career-card:hover {
-  transition: all 0.3s ease;
   transform: translateY(-5px);
-}
-
-.dyson-card:hover {
-  background-color: #111;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.perfex-card:hover {
-  background-color: #f7f7f7;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }

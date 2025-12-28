@@ -32,7 +32,7 @@
 
   padding: 2.5rem 1.25rem;
 
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* keeps banner centered with left/right margin */
@@ -82,6 +82,17 @@
   justify-content: center;
 
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+}
+
+.banner-logo-link {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.banner-logo-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .banner-logo {

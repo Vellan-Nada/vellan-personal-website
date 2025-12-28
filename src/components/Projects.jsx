@@ -10,9 +10,17 @@ import project5 from "../assets/project5.jpg";
 import project6 from "../assets/project6.jpg";
 import project7 from "../assets/project7.jpg";
 import project8 from "../assets/project8.jpg";
+import project9 from "../assets/project9.jpg";
+import project10 from "../assets/project10.jpg";
 
 function Projects() {
   const projects = [
+    {
+      title: "To Do List",
+      text: "Keep track of your tasks",
+      image: project10,
+      link: "https://vellan-nada.github.io/To-Do-List/",
+    },
     {
       title: "Timer",
       text: "A simple timer",
@@ -54,6 +62,12 @@ function Projects() {
       text: "A simple calculator",
       image: project1,
       link: "https://vellan-nada.github.io/calculator/",
+    },
+    {
+      title: "Blog",
+      text: "Write blog posts",
+      image: project9,
+      link: "https://vellan-nada.github.io/Blog-Post-frontend-/",
     },
     {
       title: "Dice Roll",

@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/hero 5.jpg";
+import heroImage from "../assets/hero 7.jpg";
 
 export default function HeroImage() {
   return (
@@ -12,7 +12,7 @@ export default function HeroImage() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          boxShadow: "0 27px 30px rgba(0, 0, 0, 0.4)",
+          boxShadow: "0 15px 30px rgba(0, 0, 0, 0.4)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -45,7 +45,7 @@ export default function HeroImage() {
               marginBottom: "0rem", // ✅ removes bottom gap
             }}
           >
-            Design engineer, with an interest in programming.
+            Former design engineer with an interest in developing software.
           </h4>
         </div>
       </div>

@@ -4,18 +4,12 @@ import "./Career.css";
 
 function Career() {
   return (
-    <div
-      style={{
-        backgroundColor: "#f8f9fa",
-        padding: "4rem 0",
-         marginBottom: "4rem",
-      }}
-    >
-      <Container fluid >
+    <div className="career-section">
+      <Container fluid>
         {/* Section title */}
         <div style={{ display: "flex", justifyContent: "center" }}>
           <h2
-            className="mb-5"
+            className="mb-4"
             style={{
               borderBottom: "1px solid #ccc",
               display: "inline-block",
@@ -28,54 +22,61 @@ function Career() {
 
         {/* Two career cards side-by-side */}
         <Row className="career-row">
-          {/* Dyson card (black background) */}
+          {/* Dyson card (dark background) */}
           <Col md={6} className="p-0">
             <Card className="career-card dyson-card">
               <Card.Body>
-                <Card.Title>Design Engineer at Dyson</Card.Title>
-                <br />
-                <Card.Text>
-                  Worked as a design engineer for about 2 years focusing on designing vacuum cleaners
+                <div className="career-header">
+                  <Card.Title className="career-title">
+                    Design Engineer at Dyson
+                  </Card.Title>
+                  <span className="career-badge">2 years</span>
+                </div>
+                <Card.Text className="career-summary">
+                  Designed vacuum cleaner components, from
+                  concept through production release.
                 </Card.Text>
-                <ul>
+                <div className="career-tags">
+                  <span>NX Siemens</span>
+                  <span>3D Modeling</span>
+                  <span>Prototyping</span>
+                  <span>Tolerance Analysis</span>
+                  <span>BOM Management</span>
+                </div>
+                <ul className="career-list">
+                  <li>Designed plastic parts and seals across 3 major projects.</li>
                   <li>
-                    Designed multiple plastic parts and seals across 3 projects. 3D modelled the parts using NX Siemens.
+                    Released complete sub-assembly drawing and BOM.
                   </li>
-                  <br/>
-                  <li>
-                    Managed the bill of materials (BOM) for a vacuum cleaner’s sub-assembly and released it for production
-                    process. Generated assembly drawing and part drawings using NX Siemens.
-                  </li>
-                  <br/>
-                  <li>
-                    Conducted tolerance analysis, built prototypes, and performed leak and investigative tests to ensure design compliance.
-                  </li>
+                  <li>Conducted tolerance analysis, built prototypes, and performed leak and investigative tests.</li>
                 </ul>
               </Card.Body>
             </Card>
           </Col>
 
-          {/* Perfex Heat Transfer card (white background) */}
+          {/* Perfex Heat Transfer card (light background) */}
           <Col md={6} className="p-0">
             <Card className="career-card perfex-card">
               <Card.Body>
-                <Card.Title>Design Engineer at Perfex Heat Transfer</Card.Title>
-                <br/>
-                <Card.Text>
-                  Worked as a design engineer for 6 months focusing on designing genset radiators
+                <div className="career-header">
+                  <Card.Title className="career-title">
+                    Design Engineer at Perfex Heat Transfer
+                  </Card.Title>
+                  <span className="career-badge">6 months</span>
+                </div>
+                <Card.Text className="career-summary">
+                  Designed industrial genset radiator systems.
                 </Card.Text>
-                <ul>
-                  <li>
-                    Reviewed engineering drawings to ensure they are production ready before sending for manufacturing.
-                  </li>
-                  <br/>
-                  <li>
-                    3D modelled radiator parts using SolidWorks.
-                  </li>
-                  <br/>
-                  <li>
-                    Investigated different designs for some radiator parts. Performed CFD simulations to analyze the performance of those redesigned parts using SolidWorks Flow Simulation.
-                  </li>
+                <div className="career-tags">
+                  <span>SolidWorks</span>
+                  <span>3D Modeling</span>
+                  <span>CFD Simulation</span>
+                  <span>CAD Drawing</span>
+                </div>
+                <ul className="career-list">
+                  <li>Reviewed drawings to ensure manufacturing readiness.</li>
+                  <li>Modeled radiator parts and assemblies in SolidWorks.</li>
+                  <li>Ran CFD simulation to compare the performance of redesigned parts.</li>
                 </ul>
               </Card.Body>
             </Card>
