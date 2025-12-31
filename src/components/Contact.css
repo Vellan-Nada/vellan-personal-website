@@ -17,7 +17,7 @@
   display: inline-block;
   font-size: 1.3em;
   margin-left: 0.1rem;
-  animation: footer-dance 2s ease-in-out infinite;
+  animation: footer-dance 2.5s ease-in-out infinite;
   transform-origin: 50% 80%;
 }
 
