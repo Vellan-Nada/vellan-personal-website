@@ -1,6 +1,6 @@
 /* wrapper for section title */
 .banner-section {
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 .banner-heading-wrap {
@@ -35,12 +35,22 @@
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
 
+.banner--placeholder {
+  background: #2f41c9;
+}
+
 /* keeps banner centered with left/right margin */
 .banner-container {
   width: 100%;
-  max-width: 1200px; /* adjust if you want */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem; /* ✅ side space on mobile too */
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 /* optional: slightly larger side space on bigger screens */
@@ -50,10 +60,18 @@
   }
 }
 
+@media (max-width: 992px) {
+  .banner-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .banner-title-link {
   color: #ffffffff; /* black text */
   text-decoration: none; /* remove underline */
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .banner-title-link:hover {
@@ -84,10 +102,28 @@
   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
 }
 
+.banner--placeholder .banner-logo-wrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+}
+
+.banner--placeholder .banner-logo {
+  border-radius: 18px;
+}
+
+.banner-logo-placeholder {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+}
+
 .banner-logo-link {
   display: inline-block;
   text-decoration: none;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .banner-logo-link:hover {
@@ -108,6 +144,10 @@
   letter-spacing: 1px;
   color: #111; /* black title */
   text-shadow: none;
+}
+
+.banner--placeholder .banner-title {
+  color: #fff;
 }
 
 .banner-subtitle {
