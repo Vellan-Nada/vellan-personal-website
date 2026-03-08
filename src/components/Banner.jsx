@@ -4,6 +4,10 @@ import logo from "../assets/stack-logo.png";
 import utterLogo from "../assets/utter.svg";
 
 export default function Banner() {
+  const zenitUrl = "https://www.zenit-online.com/";
+  const utterUrl =
+    "https://play.google.com/store/apps/details?id=com.utter.app";
+
   return (
     <section className="banner-section">
       {/* Section title (same style as Skills/Projects) */}
@@ -14,76 +18,66 @@ export default function Banner() {
       {/* Banners */}
       <div className="banner-container">
         <div className="banner-grid">
-          <div className="banner">
-            {/* Decorative big logo (background) */}
-            <div
-              className="banner-deco"
-              style={{ backgroundImage: `url(${logo})` }}
-              aria-hidden="true"
-            />
+          <a
+            href={zenitUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner">
+              {/* Decorative big logo (background) */}
+              <div
+                className="banner-deco"
+                style={{ backgroundImage: `url(${logo})` }}
+                aria-hidden="true"
+              />
 
-            {/* Center content */}
-            <div className="banner-content">
-              <a
-                href="https://www.zenit-online.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="banner-logo-link"
-              >
-                <div className="banner-logo-wrap">
-                  <img className="banner-logo" src={logo} alt="Logo" />
+              {/* Center content */}
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap">
+                    <img className="banner-logo" src={logo} alt="Logo" />
+                  </div>
                 </div>
-              </a>
 
-              <h1 className="banner-title">
-                <a
-                  href="https://www.zenit-online.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="banner-title-link"
-                >
-                  Zenit
-                </a>
-              </h1>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">Zenit</span>
+                </h1>
 
-              <p className="banner-subtitle">
-                You don’t need another productivity app.
-              </p>
+                <p className="banner-subtitle">
+                  You don’t need another productivity app.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className="banner banner--placeholder">
-            <div
-              className="banner-deco"
-              style={{ backgroundImage: `url(${utterLogo})` }}
-              aria-hidden="true"
-            />
-            <div className="banner-content">
-              <a
-                href="https://utter-a.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="banner-logo-link"
-              >
-                <div className="banner-logo-wrap">
-                  <img className="banner-logo" src={utterLogo} alt="Utter logo" />
+          <a
+            href={utterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner banner--placeholder">
+              <div
+                className="banner-deco"
+                style={{ backgroundImage: `url(${utterLogo})` }}
+                aria-hidden="true"
+              />
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap">
+                    <img className="banner-logo" src={utterLogo} alt="Utter logo" />
+                  </div>
                 </div>
-              </a>
-              <h1 className="banner-title">
-                <a
-                  href="https://utter-a.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="banner-title-link"
-                >
-                  Utter
-                </a>
-              </h1>
-              <p className="banner-subtitle">
-                Turn your Voice into Notes, Journal, To-dos. Coming soon!
-              </p>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">Utter</span>
+                </h1>
+                <p className="banner-subtitle">
+                  Turn your Voice into Notes, Journals, To-dos.
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
