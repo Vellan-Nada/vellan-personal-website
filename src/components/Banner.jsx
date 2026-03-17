@@ -7,6 +7,7 @@ export default function Banner() {
   const zenitUrl = "https://www.zenit-online.com/";
   const utterUrl =
     "https://play.google.com/store/apps/details?id=com.utter.app";
+  const nutriScanUrl = "https://nutriscan-website.vercel.app/";
 
   return (
     <section className="banner-section">
@@ -74,6 +75,42 @@ export default function Banner() {
                 </h1>
                 <p className="banner-subtitle">
                   Turn your Voice into Notes, Journals, To-dos.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={nutriScanUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner banner--green">
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap">
+                    <svg
+                      className="banner-leaf-icon"
+                      viewBox="0 0 64 64"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M48.8 14.2c-11.4 1-20.3 5-26.2 11.8-5.3 6.1-7.9 13.4-7.7 21.8 8.4-.2 15.7-2.8 21.8-7.7 6.8-5.9 10.8-14.8 11.8-26.2.1-1-.7-1.8-1.7-1.7Z"
+                        fill="#22c55e"
+                      />
+                      <path
+                        d="M43.8 19.6c-7.9 1.4-14 4.8-18.3 10.1-3.4 4.2-5.2 9.1-5.6 14.7 5.6-.4 10.5-2.3 14.7-5.6 5.3-4.3 8.7-10.4 10.1-18.3.1-.6-.4-1.1-.9-.9Z"
+                        fill="#4ade80"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">NutriScan</span>
+                </h1>
+                <p className="banner-subtitle">
+                  Analyse nutrition labels, ingredients & allergens. Coming soon!
                 </p>
               </div>
             </div>
