@@ -2,12 +2,15 @@ import React from "react";
 import "./Banner.css";
 import logo from "../assets/stack-logo.png";
 import utterLogo from "../assets/utter.svg";
+import nutriScanLogo from "../assets/nutriscan.png";
+import assetGenLogo from "../assets/assetgen.png";
 
 export default function Banner() {
   const zenitUrl = "https://www.zenit-online.com/";
   const utterUrl =
     "https://play.google.com/store/apps/details?id=com.utter.app";
-  const nutriScanUrl = "https://nutriscan-website.vercel.app/";
+  const nutriScanUrl = "https://play.google.com/store/apps/details?id=com.nutriscan.vellan";
+  const assetGenUrl = "https://www.assetgenerator.io/";
 
   return (
     <section className="banner-section">
@@ -46,7 +49,7 @@ export default function Banner() {
                 </h1>
 
                 <p className="banner-subtitle">
-                  You don’t need another productivity app.
+                  You don’t need another productivity app
                 </p>
               </div>
             </div>
@@ -74,7 +77,7 @@ export default function Banner() {
                   <span className="banner-title-link">Utter</span>
                 </h1>
                 <p className="banner-subtitle">
-                  Turn your Voice into Notes, Journals, To-dos.
+                  Turn your Voice into Notes, Journals, To-dos
                 </p>
               </div>
             </div>
@@ -90,27 +93,45 @@ export default function Banner() {
               <div className="banner-content">
                 <div className="banner-logo-link">
                   <div className="banner-logo-wrap">
-                    <svg
-                      className="banner-leaf-icon"
-                      viewBox="0 0 64 64"
-                      aria-hidden="true"
-                    >
-                      <path
-                        d="M48.8 14.2c-11.4 1-20.3 5-26.2 11.8-5.3 6.1-7.9 13.4-7.7 21.8 8.4-.2 15.7-2.8 21.8-7.7 6.8-5.9 10.8-14.8 11.8-26.2.1-1-.7-1.8-1.7-1.7Z"
-                        fill="#22c55e"
-                      />
-                      <path
-                        d="M43.8 19.6c-7.9 1.4-14 4.8-18.3 10.1-3.4 4.2-5.2 9.1-5.6 14.7 5.6-.4 10.5-2.3 14.7-5.6 5.3-4.3 8.7-10.4 10.1-18.3.1-.6-.4-1.1-.9-.9Z"
-                        fill="#4ade80"
-                      />
-                    </svg>
+                    <img
+                      className="banner-logo"
+                      src={nutriScanLogo}
+                      alt="NutriScan logo"
+                    />
                   </div>
                 </div>
                 <h1 className="banner-title">
                   <span className="banner-title-link">NutriScan</span>
                 </h1>
                 <p className="banner-subtitle">
-                  Analyse nutrition labels, ingredients & allergens. Coming soon!
+                  Analyse nutrition labels, ingredients & allergens
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={assetGenUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner banner--soft-black">
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap banner-logo-wrap--placeholder">
+                    <img
+                      className="banner-logo"
+                      src={assetGenLogo}
+                      alt="AssetGen logo"
+                    />
+                  </div>
+                </div>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">AssetGen</span>
+                </h1>
+                <p className="banner-subtitle">
+                  Context-aware asset generation for every project
                 </p>
               </div>
             </div>

@@ -60,6 +60,10 @@
   background: #16a34a;
 }
 
+.banner--soft-black {
+  background: linear-gradient(135deg, #1f1f1f 0%, #0d0d0d 100%);
+}
+
 /* keeps banner centered with left/right margin */
 .banner-container {
   width: 100%;
@@ -138,16 +142,40 @@
   border-radius: 18px;
 }
 
+.banner--green .banner-logo-wrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.banner--green .banner-logo {
+  width: 104px;
+  height: 104px;
+  border-radius: 24px;
+}
+
+.banner--soft-black .banner-logo {
+  width: 105px;
+  height: 105px;
+}
+
+.banner--soft-black .banner-logo-wrap {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+}
+
+.banner-logo-wrap--placeholder {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+}
+
 .banner-logo-placeholder {
   font-size: 2rem;
   font-weight: 700;
   color: #111;
-}
-
-.banner-leaf-icon {
-  width: 68px;
-  height: 68px;
-  display: block;
+  line-height: 1;
 }
 
 .banner-logo-link {
