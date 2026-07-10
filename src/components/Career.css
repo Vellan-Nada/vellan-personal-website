@@ -1,5 +1,5 @@
 .career-section {
-  padding: 2rem 0;
+  padding: 5rem 0 0 0;
   margin-bottom: 4rem;
 }
 
@@ -13,7 +13,9 @@
   border-radius: 0;
   text-align: left;
   padding: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .career-card .card-body {
