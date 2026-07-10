@@ -22,38 +22,38 @@ export default function Banner() {
       {/* Banners */}
       <div className="banner-container">
         <div className="banner-grid">
-          <a
+          {/* <a
             href={zenitUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="banner-link"
-          >
-            <div className="banner">
+          > */}
+            {/* <div className="banner"> */}
               {/* Decorative big logo (background) */}
-              <div
+              {/* <div
                 className="banner-deco"
                 style={{ backgroundImage: `url(${logo})` }}
                 aria-hidden="true"
-              />
+              /> */}
 
               {/* Center content */}
-              <div className="banner-content">
+              {/* <div className="banner-content">
                 <div className="banner-logo-link">
                   <div className="banner-logo-wrap">
                     <img className="banner-logo" src={logo} alt="Logo" />
                   </div>
-                </div>
+                </div> */}
 
-                <h1 className="banner-title">
+                {/* <h1 className="banner-title">
                   <span className="banner-title-link">Zenit</span>
-                </h1>
+                </h1> */}
 
-                <p className="banner-subtitle">
+                {/* <p className="banner-subtitle">
                   You don’t need another productivity app
-                </p>
-              </div>
+                </p> */}
+              {/* </div>
             </div>
-          </a>
+          </a> */}
 
           <a
             href={utterUrl}
@@ -110,13 +110,13 @@ export default function Banner() {
             </div>
           </a>
 
-          <a
+          {/* <a
             href={assetGenUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="banner-link"
-          >
-            <div className="banner banner--soft-black">
+          > */}
+            {/* <div className="banner banner--soft-black">
               <div className="banner-content">
                 <div className="banner-logo-link">
                   <div className="banner-logo-wrap banner-logo-wrap--placeholder">
@@ -133,9 +133,9 @@ export default function Banner() {
                 <p className="banner-subtitle">
                   Context-aware asset generation for every project
                 </p>
-              </div>
-            </div>
-          </a>
+              </div> */}
+            {/* </div>
+          </a> */}
         </div>
       </div>
     </section>

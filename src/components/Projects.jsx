@@ -12,6 +12,7 @@ import project7 from "../assets/project7.jpg";
 import project8 from "../assets/project8.jpg";
 import project9 from "../assets/project9.jpg";
 import project10 from "../assets/project10.jpg";
+import project11 from "../assets/project11.jpg";
 
 function Projects() {
   const projects = [
@@ -74,6 +75,12 @@ function Projects() {
       text: "Selects a winner through dice roll",
       image: project8,
       link: "https://vellan-nada.github.io/Dice-Game/",
+    },
+    {
+      title: "Productivity App",
+      text: "Suite of productivity tools",
+      image: project11,
+      link: "https://www.zenit-online.com/",
     },
   ];
 
