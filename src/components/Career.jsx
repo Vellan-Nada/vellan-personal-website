@@ -7,17 +7,8 @@ function Career() {
     <div className="career-section">
       <Container fluid>
         {/* Section title */}
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <h2
-            className="mb-4"
-            style={{
-              borderBottom: "1px solid #ccc",
-              display: "inline-block",
-              paddingBottom: "0.3rem",
-            }}
-          >
-            Career
-          </h2>
+        <div className="section-title-wrap">
+          <h2 className="section-title">Career</h2>
         </div>
 
         {/* Two career cards side-by-side */}

@@ -1,42 +1,26 @@
-/* wrapper for section title */
-.banner-section {
-  padding: 3rem 0 6rem 0;
-}
-
-.banner-heading-wrap {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-}
-
-.banner-heading {
-  margin: 0;
-  border-bottom: 1px solid #ccc;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-}
-
 /* banner */
 .banner {
   position: relative;
   overflow: hidden;
 
-  border-radius: 40px;
+  border-radius: 32px;
 
   background: #5b3a29; /* brown */
-  min-height: 290px;
+  height: 100%; /* fill the grid cell so every card in a row matches */
+  min-height: 230px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: 2rem 1rem;
+  padding: 1.5rem 1.25rem;
 
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
 
 .banner-link {
   display: block;
+  height: 100%;
   color: inherit;
   text-decoration: none;
 }
@@ -60,6 +44,18 @@
   background: #16a34a;
 }
 
+/* EasyMart: navy from the logo */
+.banner--navy {
+  background: #12315a;
+}
+
+/* WinDeck: charcoal from the app icon, with a faint orange glow from the W */
+.banner--windeck {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 106, 43, 0.22) 0%, transparent 60%),
+    linear-gradient(135deg, #2b2b28 0%, #161614 100%);
+}
+
 .banner--soft-black {
   background: linear-gradient(135deg, #1f1f1f 0%, #0d0d0d 100%);
 }
@@ -67,7 +63,7 @@
 /* keeps banner centered with left/right margin */
 .banner-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 1rem; /* ✅ side space on mobile too */
 }
@@ -75,6 +71,7 @@
 .banner-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr; /* every row the same height too */
   gap: 1.5rem;
 }
 
@@ -82,12 +79,6 @@
 @media (min-width: 768px) {
   .banner-container {
     padding: 0 2rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  .banner-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -117,10 +108,11 @@
   text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
+/* logo tile: one size for every card so the cards line up */
 .banner-logo-wrap {
-  width: 85px;
-  height: 90px;
-  margin: 0 auto 1rem auto;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 0.85rem auto;
 
   border-radius: 18px;
   background: #fff;
@@ -129,46 +121,54 @@
   align-items: center;
   justify-content: center;
 
-  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.3);
 }
 
-.banner--placeholder .banner-logo-wrap {
-  width: 90px;
-  height: 90px;
-  border-radius: 24px;
+.banner-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
+/* Utter */
 .banner--placeholder .banner-logo {
-  border-radius: 18px;
+  border-radius: 14px;
 }
 
-.banner--green .banner-logo-wrap {
-  width: 90px;
-  height: 90px;
+/* NutriScan: image has transparent padding, so draw it a bit larger */
+.banner--green .banner-logo {
+  width: 83px;
+  height: 83px;
   border-radius: 20px;
 }
 
-.banner--green .banner-logo {
-  width: 104px;
-  height: 104px;
-  border-radius: 24px;
+/* EasyMart: logo PNG has its own cream background + padding, so let it fill the tile */
+.banner--navy .banner-logo-wrap {
+  overflow: hidden;
+}
+
+.banner--navy .banner-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* WinDeck: the icon PNG is already a rounded tile with transparent corners,
+   so drop the white wrap and show it directly */
+.banner--windeck .banner-logo-wrap {
+  background: transparent;
+  box-shadow: none;
+}
+
+.banner--windeck .banner-logo {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.5));
 }
 
 .banner--soft-black .banner-logo {
-  width: 105px;
-  height: 105px;
-}
-
-.banner--soft-black .banner-logo-wrap {
-  width: 90px;
-  height: 90px;
-  border-radius: 24px;
-}
-
-.banner-logo-wrap--placeholder {
-  width: 90px;
-  height: 90px;
-  border-radius: 24px;
+  width: 84px;
+  height: 84px;
 }
 
 .banner-logo-placeholder {
@@ -190,15 +190,9 @@
   opacity: 0.9;
 }
 
-.banner-logo {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
-
 .banner-title {
   margin: 0;
-  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
   font-weight: 800;
   letter-spacing: 1px;
   color: #fff;
@@ -206,8 +200,8 @@
 }
 
 .banner-subtitle {
-  margin: 0.75rem 0 0 0;
-  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  margin: 0.5rem 0 0 0;
+  font-size: clamp(0.95rem, 1.8vw, 1.15rem);
   font-weight: 600;
   color: #fff;
   opacity: 0.95;
@@ -215,7 +209,6 @@
 
 @media (max-width: 480px) {
   .banner {
-    min-height: 260px;
-    border-width: 8px;
+    min-height: 210px;
   }
 }

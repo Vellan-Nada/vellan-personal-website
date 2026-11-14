@@ -86,19 +86,10 @@ function Projects() {
 
 
   return (
-    <Container className="my-3">
+    <Container>
       {/* Section Title */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <h2
-          className="mb-4"
-          style={{
-            borderBottom: "1px solid #ccc",
-            display: "inline-block",
-            paddingBottom: "0.5rem",
-          }}
-        >
-          Side Projects
-        </h2>
+      <div className="section-title-wrap">
+        <h2 className="section-title">Side Projects</h2>
       </div>
 
       {/* Responsive Layout */}

@@ -9,3 +9,36 @@ body{
 section {
   scroll-margin-top: 100px; /* height of your navbar */
 }
+
+/* ---- Section spacing: change these two values to adjust the whole page ---- */
+:root {
+  --section-gap: 5rem; /* space between one section and the next */
+  --heading-gap: 2rem; /* space between a section title and its content */
+}
+
+#skills,
+#mainsoftware,
+#projects,
+#certifications,
+#career {
+  padding-top: var(--section-gap);
+}
+
+/* last section before the footer */
+#career {
+  padding-bottom: var(--section-gap);
+}
+
+/* shared section title (Skills, Main Software, Side Projects, ...) */
+.section-title-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--heading-gap);
+}
+
+.section-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0.5rem 0.5rem;
+  border-bottom: 1px solid #ccc;
+}

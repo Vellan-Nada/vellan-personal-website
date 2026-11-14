@@ -1,15 +1,6 @@
 /* Skills.css */
 .skills-container {
   text-align: center;
-  padding: 5rem 0 2rem 0;
-}
-
-.skills-title {
-  font-size: 2rem;
-  border-bottom: 1px solid #ccc;
-  display: inline-block;
-  padding: 0 1rem;
-  margin-bottom: 2rem;
 }
 
 .skills-grid {
@@ -32,6 +23,7 @@
 .skill-item p {
   font-size: 1.1rem;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .skill-item img:hover {

@@ -5,6 +5,7 @@ import HeroImage from './components/Hero';
 import Skills from './components/Skills';
 import Banner from './components/Banner';
 import Projects from './components/Projects';
+import Certifications from './components/Certifications';
 import Career from './components/Career';
 import Contact from './components/Contact';
 
@@ -29,6 +30,10 @@ function App() {
 
       <section id="projects">
         <Projects />
+      </section>
+
+      <section id="certifications">
+        <Certifications />
       </section>
 
       <section id="career">

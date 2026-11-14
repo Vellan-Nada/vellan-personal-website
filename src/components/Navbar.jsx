@@ -7,9 +7,10 @@ function BasicExample() {
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      // ✅ Scroll to the section minus navbar height
-      const yOffset = -80; // adjust if your navbar is taller
-      const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      // Aim at the section's title (sections now have top padding), minus navbar height
+      const target = section.querySelector("h2") ?? section;
+      const yOffset = -100; // navbar height + a little breathing room
+      const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
       window.scrollTo({ top: y, behavior: "smooth" });
     }
@@ -70,6 +71,16 @@ function BasicExample() {
               }}
             >
               Side Projects
+            </Nav.Link>
+
+            <Nav.Link
+              href="#certifications"
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll("certifications");
+              }}
+            >
+              Certifications
             </Nav.Link>
 
             <Nav.Link

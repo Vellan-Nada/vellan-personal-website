@@ -24,7 +24,9 @@ const skills = [
 function Skills() {
   return (
     <section className="skills-container">
-      <h2 className="skills-title">Skills</h2>
+      <div className="section-title-wrap">
+        <h2 className="section-title">Skills</h2>
+      </div>
 
       <div className="skills-grid">
         {skills.map((skill, index) => (

@@ -4,6 +4,8 @@ import logo from "../assets/stack-logo.png";
 import utterLogo from "../assets/utter.svg";
 import nutriScanLogo from "../assets/nutriscan.png";
 import assetGenLogo from "../assets/assetgen.png";
+import easyMartLogo from "../assets/em.png";
+import winDeckLogo from "../assets/windeck.png";
 
 export default function Banner() {
   const zenitUrl = "https://www.zenit-online.com/";
@@ -11,12 +13,14 @@ export default function Banner() {
     "https://play.google.com/store/apps/details?id=com.utter.app";
   const nutriScanUrl = "https://play.google.com/store/apps/details?id=com.nutriscan.vellan";
   const assetGenUrl = "https://www.assetgenerator.io/";
+  const easyMartUrl = "https://www.easymart.dev/";
+  const winDeckUrl = "https://windeck.dev/";
 
   return (
     <section className="banner-section">
       {/* Section title (same style as Skills/Projects) */}
-      <div className="banner-heading-wrap">
-        <h2 className="banner-heading">Main Software</h2>
+      <div className="section-title-wrap">
+        <h2 className="section-title">Main Software</h2>
       </div>
 
       {/* Banners */}
@@ -105,6 +109,60 @@ export default function Banner() {
                 </h1>
                 <p className="banner-subtitle">
                   Analyse nutrition labels, ingredients & allergens
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={easyMartUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner banner--navy">
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap">
+                    <img
+                      className="banner-logo"
+                      src={easyMartLogo}
+                      alt="EasyMart logo"
+                    />
+                  </div>
+                </div>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">EasyMart</span>
+                </h1>
+                <p className="banner-subtitle">
+                  Bring your business online, all in one place
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href={winDeckUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="banner-link"
+          >
+            <div className="banner banner--windeck">
+              <div className="banner-content">
+                <div className="banner-logo-link">
+                  <div className="banner-logo-wrap">
+                    <img
+                      className="banner-logo"
+                      src={winDeckLogo}
+                      alt="WinDeck logo"
+                    />
+                  </div>
+                </div>
+                <h1 className="banner-title">
+                  <span className="banner-title-link">WinDeck</span>
+                </h1>
+                <p className="banner-subtitle">
+                  Your personal command center for Windows
                 </p>
               </div>
             </div>
